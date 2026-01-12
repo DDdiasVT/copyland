@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --font-main: "Inter", sans-serif;
+
+  /* Color Palette from Image */
+  --color-brand-red: #7D2E2E;
+  /* Deep maroon/red header */
+  --color-brand-red-dark: #662222;
+  --color-bg-cream: #FDFBF7;
+  /* Light beige/cream background */
+  --color-bg-white: #FFFFFF;
+  --color-text-dark: #1A1A1A;
+  --color-text-gray: #666666;
+  --color-gold: #FFC107;
+  /* Stars/Accents */
+
+  --color-primary: var(--color-brand-red);
+  --color-secondary: var(--color-bg-cream);
+}
+
+@theme {
+  --color-brand-red: #7D2E2E;
+  --color-brand-red-dark: #662222;
+  --color-bg-cream: #FDFBF7;
+}
+
+body {
+  background-color: var(--color-bg-cream);
+  color: var(--color-text-dark);
+}
+
+/* Custom Utilities for pixel perfect tweaks */
+.bg-brand-red {
+  background-color: var(--color-brand-red);
+}
+
+.text-brand-red {
+  color: var(--color-brand-red);
+}
+
+.bg-cream {
+  background-color: var(--color-bg-cream);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

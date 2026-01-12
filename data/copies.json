@@ -1,0 +1,88 @@
+[
+  {
+    "id": "1",
+    "title": "The Titless Ads Inside So Awesome Copy That Actually Works",
+    "author": "Anonymous",
+    "category": "Páginas de Vendas",
+    "rating": 4.5,
+    "imageUrl": "https://placehold.co/600x400/png?text=Sales+Page",
+    "createdAt": "2023-10-01T10:00:00Z",
+    "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    "explanation": "This sales page revolutionized the industry by focusing on the 'Mechanism' of the problem. It uses a strong headline that addresses a specific pain point.",
+    "notes": "Observe how the author transitions from the headline to the lead. The flow is seamless.",
+    "lessons": "1. Always start with a big promise.\n2. Back up claims with proof.\n3. agitation is key.",
+    "isPremium": true
+  },
+  {
+    "id": "2",
+    "title": "Accumsan Nunc... 1948 - How I Grew My Fortune",
+    "author": "Claude Hopkins",
+    "category": "Ads",
+    "rating": 3,
+    "imageUrl": "https://placehold.co/600x400/png?text=Fortune+Ad",
+    "createdAt": "2023-10-02T11:00:00Z"
+  },
+  {
+    "id": "3",
+    "title": "Email Sequence: The 5-Day Induction Series",
+    "author": "Frank Kern",
+    "category": "Email",
+    "rating": 4.2,
+    "imageUrl": "https://placehold.co/600x400/png?text=Email+Sequence",
+    "createdAt": "2023-10-03T12:00:00Z"
+  },
+  {
+    "id": "4",
+    "title": "VSL Script: The Problem-Agitate-Solve Method",
+    "author": "Jon Benson",
+    "category": "VSL",
+    "rating": 3.5,
+    "imageUrl": "https://placehold.co/600x400/png?text=VSL+Method",
+    "createdAt": "2023-10-04T13:00:00Z"
+  },
+  {
+    "id": "5",
+    "title": "Instagram Caption That Went Viral - 2M+ Reach",
+    "author": "Gary Vaynerchuk",
+    "category": "Redes Sociais",
+    "rating": 4,
+    "imageUrl": "https://placehold.co/600x400/png?text=Viral+Caption",
+    "createdAt": "2023-10-05T14:00:00Z"
+  },
+  {
+    "id": "6",
+    "title": "Classic Direct Mail: The Letter That Never Failed",
+    "author": "Gary Halbert",
+    "category": "Carta de Vendas",
+    "rating": 5,
+    "imageUrl": "https://placehold.co/600x400/png?text=Direct+Mail",
+    "createdAt": "2023-10-06T15:00:00Z"
+  },
+  {
+    "id": "7",
+    "title": "They Laughed When I Sat Down At The Piano But When...",
+    "author": "John Caples",
+    "category": "Ads",
+    "rating": 5,
+    "imageUrl": "https://placehold.co/600x400/png?text=Piano+Ad",
+    "createdAt": "1926-01-01T00:00:00Z"
+  },
+  {
+    "id": "8",
+    "title": "Do You Make These Mistakes In English?",
+    "author": "Maxwell Sackheim",
+    "category": "Ads",
+    "rating": 4.8,
+    "imageUrl": "https://placehold.co/600x400/png?text=English+Mistakes",
+    "createdAt": "1920-01-01T00:00:00Z"
+  },
+  {
+    "id": "9",
+    "title": "The Million Dollar Sales Letter",
+    "author": "Robert Collier",
+    "category": "Carta de Vendas",
+    "rating": 4.9,
+    "imageUrl": "https://placehold.co/600x400/png?text=Million+Dollar",
+    "createdAt": "1930-01-01T00:00:00Z"
+  }
+]

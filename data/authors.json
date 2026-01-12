@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Claude Hopkins",
+        "imageUrl": "/images/legends/hopkins.jpg",
+        "bio": "Claude C. Hopkins (1866–1932) foi um dos grandes pioneiros da publicidade. Ele acreditava que a publicidade deveria ser mensurada e justificada pelos resultados de vendas. Seu livro 'Scientific Advertising' é considerado uma leitura obrigatória para qualquer profissional de marketing."
+    },
+    {
+        "id": "2",
+        "name": "David Ogilvy",
+        "imageUrl": "/images/legends/ogilvy.jpg",
+        "bio": "David Ogilvy é frequentemente chamado de 'O Pai da Publicidade'. Ele fundou a Ogilvy & Mather e é conhecido por suas campanhas icônicas para marcas como Rolls-Royce, Dove e Hathaway."
+    },
+    {
+        "id": "3",
+        "name": "Eugene Schwartz",
+        "imageUrl": "/images/legends/schwartz.jpg",
+        "bio": "Eugene Schwartz foi um mestre do copywriting de resposta direta. Seu livro 'Breakthrough Advertising' é lendário por sua análise profunda da conscientização do mercado e sofisticação do público."
+    },
+    {
+        "id": "4",
+        "name": "Gary Halbert",
+        "imageUrl": "/images/legends/halbert.jpg",
+        "bio": "Gary Halbert, conhecido como 'The Prince of Print', era famoso por suas cartas de vendas diretas e agressivas que geravam taxas de resposta recordes. Sua newsletter, 'The Gary Halbert Letter', é um clássico."
+    },
+    {
+        "id": "5",
+        "name": "Gary Bencivenga",
+        "imageUrl": "/images/legends/bencivenga.jpg",
+        "bio": "Gary Bencivenga é amplamente considerado o maior copywriter vivo. Ele é conhecido por suas pesquisas meticulosas e por suas balas ('bullets') irresistíveis."
+    },
+    {
+        "id": "6",
+        "name": "John Caples",
+        "imageUrl": "/images/legends/caples.jpg",
+        "bio": "John Caples foi um pioneiro em testar a eficácia dos anúncios. Ele é famoso pela manchete: 'Eles riram quando eu me sentei ao piano... mas quando comecei a tocar!'."
+    },
+    {
+        "id": "7",
+        "name": "Joseph Sugarman",
+        "imageUrl": "/images/legends/sugarman.jpg",
+        "bio": "Joe Sugarman é conhecido por suas habilidades de contar histórias e por seus anúncios de longa duração para produtos eletrônicos. Ele introduziu o conceito de 'slippery slope' (escorregador) no copy."
+    }
+]
