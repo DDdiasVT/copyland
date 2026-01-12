@@ -4,8 +4,8 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("DATABASE_URL") // Connection Pooling URL (Neon)
-  directUrl = env("DIRECT_URL") // Direct Connection URL (Neon)
+  url = env("POSTGRES_PRISMA_URL") // Vercel Postgres Pool
+  directUrl = env("POSTGRES_URL_NON_POOLING") // Vercel Postgres Direct
 }
 
 model Copy {
