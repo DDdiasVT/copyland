@@ -2,13 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import path from 'path';
 import fs from 'fs/promises';
 
-export const config = {
-    api: {
-        bodyParser: false, // Disabling body parser to handle FormData manually if needed, though Next.js App Router handles it.
-    },
-};
 
 export async function POST(req: NextRequest) {
+    console.log('Upload request received');
     try {
         const formData = await req.formData();
         const file = formData.get('file') as File;
