@@ -1,10 +1,8 @@
+import { put } from '@vercel/blob';
 import { NextRequest, NextResponse } from 'next/server';
-import path from 'path';
-import fs from 'fs/promises';
-
 
 export async function POST(req: NextRequest) {
-    console.log('Upload request received');
+    console.log('Upload request received (Vercel Blob)');
     try {
         const formData = await req.formData();
         const file = formData.get('file') as File;
@@ -14,24 +12,14 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: 'No file uploaded' }, { status: 400 });
         }
 
-        const buffer = Buffer.from(await file.arrayBuffer());
         const filename = file.name.replace(/\s+/g, '-').toLowerCase();
-        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
-        const uniqueFilename = `${uniqueSuffix}-${filename}`;
+        // Vercel Blob handles uniqueness automatically if we don't specify overlapping paths,
+        // but organizing by folders is good.
+        const blob = await put(`${folder}/${filename}`, file, {
+            access: 'public',
+        });
 
-        // Define public directory path
-        const publicPath = path.join(process.cwd(), 'public', 'uploads', folder);
-
-        // Create directory if it doesn't exist
-        await fs.mkdir(publicPath, { recursive: true });
-
-        // Write file to the public folder
-        await fs.writeFile(path.join(publicPath, uniqueFilename), buffer);
-
-        // Return the relative URL
-        const fileUrl = `/uploads/${folder}/${uniqueFilename}`;
-
-        return NextResponse.json({ url: fileUrl });
+        return NextResponse.json({ url: blob.url });
     } catch (error) {
         console.error('Upload error:', error);
         return NextResponse.json({ error: 'Upload failed' }, { status: 500 });

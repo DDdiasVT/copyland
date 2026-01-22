@@ -32,12 +32,15 @@ export default function FileUpload({ label, folder, accept, value, onChange }: F
                 body: formData,
             });
 
-            if (!res.ok) throw new Error('Upload failed');
+            if (!res.ok) {
+                const data = await res.json().catch(() => ({}));
+                throw new Error(data.error || `Erro ${res.status}`);
+            }
 
             const data = await res.json();
             onChange(data.url);
-        } catch (err) {
-            setError('Erro ao enviar arquivo.');
+        } catch (err: any) {
+            setError(err.message || 'Erro desconhecido ao enviar arquivo.');
             console.error(err);
         } finally {
             setUploading(false);
