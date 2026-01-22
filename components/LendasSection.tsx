@@ -58,7 +58,7 @@ export default function LendasSection() {
                             <Link
                                 href={`/lendas/${author.id}`}
                                 key={author.id}
-                                className="flex-none w-[calc(25%-1.2rem)] md:w-[calc(25%-1.2rem)] flex flex-col items-center group/item cursor-pointer snap-center transition-transform hover:-translate-y-1"
+                                className="flex-none w-32 md:w-[calc(25%-1.2rem)] flex flex-col items-center group/item cursor-pointer snap-center transition-transform hover:-translate-y-1"
                             >
                                 <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden mb-4 filter grayscale group-hover/item:grayscale-0 transition-all duration-500 shadow-sm border-2 border-transparent group-hover/item:border-brand-red/20">
                                     {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -4,6 +4,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { CATEGORIES, Copy } from '@/types';
+import FileUpload from '@/components/FileUpload';
 
 export default function EditCopyPage() {
     const router = useRouter();
@@ -108,25 +109,34 @@ export default function EditCopyPage() {
 
                     <div className="grid grid-cols-2 gap-4">
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">URL da Imagem (Capa)</label>
-                            <input
-                                type="text"
-                                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-black"
+                            <FileUpload
+                                label="Imagem de Capa"
+                                folder="images"
+                                accept="image/*"
                                 value={formData.imageUrl || ''}
-                                onChange={e => setFormData({ ...formData, imageUrl: e.target.value })}
-                                placeholder="/images/..."
+                                onChange={(url) => setFormData(prev => ({ ...prev, imageUrl: url }))}
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">URL do PDF</label>
-                            <input
-                                type="text"
-                                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-black"
+                            <FileUpload
+                                label="PDF da Copy"
+                                folder="pdfs"
+                                accept="application/pdf"
                                 value={formData.pdfUrl || ''}
-                                onChange={e => setFormData({ ...formData, pdfUrl: e.target.value })}
-                                placeholder="https://..."
+                                onChange={(url) => setFormData(prev => ({ ...prev, pdfUrl: url }))}
                             />
                         </div>
+                    </div>
+
+                    <div>
+                        <label className="block text-sm font-medium text-gray-700">Vídeo (YouTube Embed/Link)</label>
+                        <input
+                            type="text"
+                            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-black"
+                            value={formData.videoUrl || ''}
+                            onChange={e => setFormData({ ...formData, videoUrl: e.target.value })}
+                            placeholder="https://www.youtube.com/watch?v=..."
+                        />
                     </div>
 
                     <div>

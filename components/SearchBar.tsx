@@ -27,14 +27,14 @@ export default function SearchBar({ onSearch, onCategorySelect, selectedCategory
             </div>
 
             {/* Categories / Chips */}
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex overflow-x-auto pb-4 gap-3 scrollbar-hide -mx-4 px-4 snap-x md:flex-wrap md:justify-center md:overflow-visible md:pb-0">
                 {CATEGORIES.map((cat) => (
                     <button
                         key={cat}
                         onClick={() => onCategorySelect(cat)}
-                        className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 border ${selectedCategory === cat
-                                ? 'bg-brand-red text-white border-brand-red shadow-md'
-                                : 'bg-white text-gray-600 border-gray-200 hover:border-brand-red hover:text-brand-red'
+                        className={`flex-none snap-center px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 border whitespace-nowrap ${selectedCategory === cat
+                            ? 'bg-brand-red text-white border-brand-red shadow-md'
+                            : 'bg-white text-gray-600 border-gray-200 hover:border-brand-red hover:text-brand-red'
                             }`}
                     >
                         {cat}
